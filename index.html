@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Online Конвертирование русской раскладки в английскую (16 языков: RU-EN, EN-RU, UK-EN, EN-UK, UK-RU)</title>
+    <meta name="keywords" content="раскладка, не та раскладка, неправильная раскладка, неверная раскладка, hfcrkflrf, опечатка, переключение раскладки клавиатуры, Punto Switcher онлайн">
+    <meta name="description" content="Конвертирование текста, набранного в неправильной раскладке прямо из браузера. Если вы забыли переключить раскладку клавиатуры.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Конвертация раскладки">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/convert.css">
+  </head>
+  <body>
+    <div class="navbar navbar-light bg-faded" role="navigation">
+      <div class="container">
+        <!-- Collapsed navigation-->
+        <div class="navbar-header">
+          <!-- Expander button--><a class="navbar-brand" href=".">Typing.su</a>
+          <button class="navbar-toggler hidden-sm-up float-sm-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">≡</button>
+          <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <!-- Main navigation-->
+            <ul class="nav navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="/">Раскладка<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="emoji.html">Эмоджи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron bs-docs-header">
+      <div class="container">
+        <h1>Исправление текста в неправильной раскладке</h1>
+        <p class="lead"><span class="flag flag-ru" title="Русский"></span><span class="flag flag-en" title="English (Английский)"></span><span class="flag flag-uk" title="Українська (Украинский)"></span><span class="flag flag-be" title="Беларуская (Белорусский)"></span><span class="flag flag-uz" title="Ўзбекча (Узбекский)"></span><span class="flag flag-kk" title="Қазақша (Казахский)"></span><span class="flag flag-az" title="Azərbaycanca (Азербайджанский)"></span><span class="flag flag-lt" title="Lietuvių (Литовский)"></span><span class="flag flag-mo" title="Moldovenească (Молдавский)"></span><span class="flag flag-lv" title="Latviešu (Латышский)"></span><span class="flag flag-ky" title="Кыргызча (Киргизский)"></span><span class="flag flag-tg" title="Тоҷикӣ (Таджикский)"></span><span class="flag flag-hy" title="Հայերեն (Армянский)"></span><span class="flag flag-tk" title="Türkmen (Туркменский)"></span><span class="flag flag-et" title="Eesti (Эстонский)"></span>
+        </p>
+      </div>
+    </div>
+    <main class="container">
+      <div class="row">
+        <div class="col-xs-4 col-sm-2 col-lg-1"><b>Пример:</b></div>
+        <div class="col-xs-8 col-sm-4 col-lg-3">Ghbdtn! ⇒ Привет!<br>Руддщ! ⇒ Hello!</div>
+      </div><br>
+      <form class="form-horizontal" id="convert-form">
+        <div class="row">
+          <div class="col-sm-6">
+            <fieldset class="form-group">
+              <textarea class="form-control" name="coded" cols="50" rows="12" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Вставьте сюда текст в неправильной раскладке и нажмите кнопку старт!"></textarea>
+            </fieldset>
+          </div>
+          <div class="col-sm-6">
+            <fieldset class="form-group">
+              <textarea class="form-control" id="decoded" name="decoded" cols="50" rows="12"></textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <fieldset class="form-group">
+              <select class="custom-select" id="lang1">
+                <option class="lang-sm lang-lbl-full" value="auto" selected lang="be">Авто</option>
+                <option value="ru">Русский</option>
+                <option value="en">English (Английский)</option>
+                <option value="uk">Українська (Украинский)</option>
+                <option value="be">Беларуская (Белорусский)</option>
+                <option value="uz">Ўзбекча (Узбекский)</option>
+                <option value="kk">Қазақша (Казахский)</option>
+                <option value="az">Azərbaycanca (Азербайджанский)</option>
+                <option value="lt">Lietuvių (Литовский)</option>
+                <option value="mo">Moldovenească (Молдавский)</option>
+                <option value="lv">Latviešu (Латышский)</option>
+                <option value="ky">Кыргызча (Киргизский)</option>
+                <option value="tg">Тоҷикӣ (Таджикский)</option>
+                <option value="hy">Հայերեն (Армянский)</option>
+                <option value="tk">Türkmen (Туркменский)</option>
+                <option value="et">Eesti (Эстонский)</option>
+              </select>
+            </fieldset>
+          </div>
+          <div class="col-md-6">
+            <fieldset class="form-group">
+              <select class="custom-select" id="lang2">
+                <option value="ru">Русский</option>
+                <option value="en">English (Английский)</option>
+                <option value="uk">Українська (Украинский)</option>
+                <option value="be">Беларуская (Белорусский)</option>
+                <option value="uz">Ўзбекча (Узбекский)</option>
+                <option value="kk">Қазақша (Казахский)</option>
+                <option value="az">Azərbaycanca (Азербайджанский)</option>
+                <option value="lt">Lietuvių (Литовский)</option>
+                <option value="mo">Moldovenească (Молдавский)</option>
+                <option value="lv">Latviešu (Латышский)</option>
+                <option value="ky">Кыргызча (Киргизский)</option>
+                <option value="tg">Тоҷикӣ (Таджикский)</option>
+                <option value="hy">Հայերեն (Армянский)</option>
+                <option value="tk">Türkmen (Туркменский)</option>
+                <option value="et">Eesti (Эстонский)</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="btn btn-info" id="start-btn" type="button" value="Старт!">
+              <input class="btn" id="copy-btn" type="button" value="Копировать" data-clipboard-target="#decoded">
+              <input class="btn" id="clear-btn" type="button" value="Очистить">
+            </fieldset>
+          </div>
+        </div>
+      </form><br>
+      <div class="row">
+        <div class="col-sm-12">
+<script type="text/javascript" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://yastatic.net/share2/share.js" charset="utf-8"></script>
+<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,lj"></div>
+        </div>
+      </div><br>
+      <div class="jumbotron">
+        <div class="text-muted">
+          <h5>Особенности кодировщика:</h5>
+          <ul>
+            <li>Введенные данные не отправляются на сервер, поэтому:
+              <ol>
+                <li>Исключена возможность прочтения вашего текста</li>
+                <li>Мгновенное кодирование без расходования трафика.</li>
+              </ol>
+            </li>
+            <li>Не нужно устанавливать на компьютер дополнительные программы,<br>  просто добавьте страницу в закладки браузера</li>
+          </ul>
+        </div>
+      </div>
+      <div class="well panel-narrow">
+        <div class="row">
+          <div class="col-sm-4">
+            <p><span class="lang-sm lang-lbl-full" lang="ru"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="en"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="uk"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="be"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="uz"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="kk"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="az"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="lt"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="mo"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="lv"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="ky"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="tg"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="hy"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="tk"></span></p>
+            <p><span class="lang-sm lang-lbl-full" lang="et"></span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bd-footer">
+      <div class="container">
+        <p class="text-muted float-sm-right">© 2008–2016</p>
+<!-- Yandex.Metrika counter-->
+<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38052870 = new Ya.Metrika({ id:38052870, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/38052870" style="position:absolute; left:-9999px;" alt=""></div>
+</noscript>
+<!-- /Yandex.Metrika counter-->
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
